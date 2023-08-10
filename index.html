@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 760px;
+            background:linear-gradient(140deg, red,orange);
+        }
+        .item{
+            margin: 4px;
+            margin-top:190px;
+            border-radius: 25px;
+            height: 450px;
+            width: 100px;
+            overflow:hidden;
+            box-shadow: 1px 2px 5px 1.5px black;
+        }
+        img{
+            /* border: 8px solid red; */
+            /* width: 150px !important; */
+            height: 450px;
+           position: relative;
+           left:-150px;        
+  
+            
+        }
+        .img1{
+            left:-450px;
+        }
+        .img2{
+            left:-450px;
+        }
+        .img3{
+            left:-450px;
+        }
+        .img4{
+            left:-450px;
+        }
+        .img5{
+            left:-450px;
+        }
+        @keyframes myanimation{
+            0%{
+                width: 370px;
+            }
+            20%{
+                width: 340px;
+            }
+            40%{
+                width: 440px;
+            }
+            60%{
+                width: 390px;
+            }
+            80%{
+                width: 370px;
+            }
+            100%{
+                width: 400px;
+            }
+        }
+
+        .item:hover{
+            width: 430px;
+            /* transition-property: width;
+            transition-duration:1.5s;
+            transition-timing-function: ease;
+            transition-delay: .5s; */
+            animation-name: myanimation;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in;
+            animation-delay: .2s; 
+            /*animation-iteration-count: 2;
+            animation-direction: alternate;*/
+            transition: 0.5s ease-out;
+        }
+        .img1:hover{
+            position: relative;
+            left:-160px;
+        }
+        .img2:hover{
+            position: relative;
+            left:-160px;
+        }
+        .img3:hover{
+            position: relative;
+            left:-160px;
+        }
+        .img4:hover{
+            position: relative;
+            left:-160px;
+        }
+        .img5:hover{
+            position: relative;
+            left:-160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="item " id="image1">
+        <img src="anime1.jpg" class="img1" alt="error">
+    </div>
+    <div class="item" >
+        <img src="anime2.jpg" class="img2" alt="error">
+    </div>
+    <div class="item">
+        <img src="anime3.jpg" class="img3" alt="error">
+    </div>
+    <div class="item">
+        <img src="anime4.png" class="img4" alt="error">
+    </div>
+    <div class="item">
+        <img src="anime5.png" class="img5" alt="error">
+    </div>
+   
+</body>
+</html>
